@@ -1,4 +1,5 @@
 #!/usr/bin/env sh
+# shellcheck disable=SC2034
 dns_area7_info='area-7.it
 Site: area-7.it
 Docs: https://github.com/acmesh-official/acme.sh/wiki/dnsapi2#dns_area7
