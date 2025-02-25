@@ -99,13 +99,11 @@ _get_root() {
   return 0
 }
 
-
 _area7_rest() {
   url="$area7_API$2"
   export _H1="Authorization: Bearer $area7_Token"
   export _H2="Content-Type: application/x-www-form-urlencoded"
   _response=$(_post "$3" "$url" "" "$1")
-
 
   if ! _contains "$_response" "\"message\":\"OK\""; then
     return 1
