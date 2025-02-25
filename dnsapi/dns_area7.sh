@@ -94,9 +94,9 @@ _get_root() {
   i=1
   p=1
 
-      _sub_domain=$(printf "%s" "$domain" | cut -d . -f 1-"$p")
-      _domain=$(echo "$domain" | cut -d . -f 2-)
-      return 0
+  _sub_domain=$(printf "%s" "$domain" | cut -d . -f 1-"$p")
+  _domain=$(echo "$domain" | cut -d . -f 2-)
+  return 0
 }
 
 
