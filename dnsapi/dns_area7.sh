@@ -1,3 +1,4 @@
+#!/usr/bin/env sh
 dns_area7_info='area-7.it
 Site: area-7.it
 Docs: github.com/acmesh-official/acme.sh/wiki/dnsapi2#TBD
