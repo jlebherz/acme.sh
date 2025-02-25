@@ -1,10 +1,10 @@
 #!/usr/bin/env sh
 dns_area7_info='area-7.it
 Site: area-7.it
-Docs: github.com/acmesh-official/acme.sh/wiki/dnsapi2#TBD
+Docs: https://github.com/acmesh-official/acme.sh/wiki/dnsapi2#dns_area7
 Options:
  area7_Token API Token
-Issues: github.com/acmesh-official/acme.sh/issues/TBD
+Issues: https://github.com/acmesh-official/acme.sh/issues/6248
 Author: John Lebherz
 '
 
