@@ -119,8 +119,8 @@ _area7_rest() {
 
 
   if ! _contains "$_response" "\"message\":\"OK\""; then
-    return 1
+    return 0
   fi
   _debug2 response "$_response"
-  return 0
+  return 1
 }
