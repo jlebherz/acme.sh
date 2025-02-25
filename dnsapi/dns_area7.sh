@@ -94,22 +94,11 @@ _get_root() {
   i=1
   p=1
 
-
       _sub_domain=$(printf "%s" "$domain" | cut -d . -f 1-"$p")
       _domain=$(echo "$domain" | cut -d . -f 2-)
       return 0
 }
 
-#send get request to api
-# $1 has to set the api-function
-_area7_get() {
-  url="$area7_API?$1"
-  export _H1="Authorization: Bearer $area7_Token"
-
-  _response=$(_get "$url")
-  _response="$(echo "$_response" | _normalizeJson)"
-
-}
 
 _area7_rest() {
   url="$area7_API$2"
@@ -119,8 +108,8 @@ _area7_rest() {
 
 
   if ! _contains "$_response" "\"message\":\"OK\""; then
-    return 0
+    return 1
   fi
   _debug2 response "$_response"
-  return 1
+  return 0
 }
